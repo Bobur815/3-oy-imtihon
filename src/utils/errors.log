@@ -1,0 +1,4 @@
+26-05-2025 | 18:26:11 | [ERROR] : [POST /api/staff/register] ValidationError: "firstname" is required
+Stack: ValidationError: "firstname" is required
+26-05-2025 | 18:26:35 | [ERROR] : [POST /api/staff/register] ValidationError: "branch_id" is required
+Stack: ValidationError: "branch_id" is required
