@@ -2,7 +2,7 @@ import { Schema, model } from "mongoose";
 
 const transportSchema = new Schema({
     modelName: {type: String, required:true, unique: true},
-    branch_id: {type: Schema.Types.ObjectId, required:true},
+    branch_id: {type: Schema.Types.ObjectId, ref:"Branch", required:true},
     color: {type: String, required:true},
     img: {type: String, default: null},
     price: {type: Number, required:true}

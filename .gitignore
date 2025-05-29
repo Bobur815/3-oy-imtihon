@@ -1,0 +1,4 @@
+/node_modules
+/jsconfig.json
+/src/utils/errors.log
+/src/uploads

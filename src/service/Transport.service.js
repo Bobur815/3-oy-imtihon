@@ -12,7 +12,7 @@ class TransportService {
 
         // staff bo'lsa faqat o'zining branchidagi transportlar ko'rsatiladi
         if(user.role === "SuperAdmin"){
-            transportData = await transportsModel.find()
+            transportData = await transportsModel.find().populate("branch_id","name")
         } else{
             transportData = await transportsModel.find({branch_id:user.branch_id})
         }
@@ -20,7 +20,7 @@ class TransportService {
     }
 
     async getTransportById(transport_id){
-        const transport = await transportsModel.findById(transport_id)
+        const transport = await transportsModel.findById(transport_id).populate("branch_id","name")
         if(!transport){
             throw new CustomError("Transport not found", 404, "NotFoundError")
         }
@@ -36,8 +36,8 @@ class TransportService {
                 getQuery[key]=query[key]
             }
         }
-        console.log(getQuery);
-        const transport = await transportsModel.find(getQuery)
+
+        const transport = await transportsModel.find(getQuery).populate("branch_id","name")
         if(!transport){
             throw new CustomError("Transport not found", 404, "NotFoundError")
         }
@@ -93,6 +93,12 @@ class TransportService {
             });
         
             data.img = fileName;
+        }
+
+        // Shu modelName boshqa transportga berilganligini tekshirish:
+        const existing = await transportsModel.findOne({ modelName: data.modelName });
+        if (existing && existing._id.toString() !== transport_id) {
+            throw new CustomError("Transport with this modelName already exists", 400, "ModelNameExists");
         }
 
         const updatedTransport = await transportsModel.findByIdAndUpdate(transport_id, data, {new: true});

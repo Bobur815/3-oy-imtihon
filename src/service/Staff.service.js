@@ -41,7 +41,7 @@ class StaffService {
     async createStaff(data){
         const oldStaff = await StaffsModel.findOne({username:data.username})
         if(oldStaff){
-            throw new CustomError("Staff with this username exists",400,"UsernameExists")
+            throw new CustomError(`Staff with this ${data.username} username exists`,400,"UsernameExists")
         }
 
         const hashedPassword = await bcrypt.hash(data.password,10)
@@ -76,11 +76,6 @@ class StaffService {
         const {token} = this.generateToken({_id:user._id,username:data.username})
         return token
     }
-    
-    async deleteStaff(staff_id){
-        await StaffsModel.findByIdAndDelete(staff_id)
-        return "Staff successfully deleted" 
-    }
 
     async updateStaff(data,staff_id){
         const staff = await StaffsModel.findById(staff_id);
@@ -95,6 +90,14 @@ class StaffService {
         const updatedStaff = await StaffsModel.findByIdAndUpdate(staff_id, data, {new: true}).select("-password");
 
         return updatedStaff;
+    }
+
+    async deleteStaff(staff_id){
+        const result = await StaffsModel.findByIdAndDelete(staff_id)
+        if(!result){
+            throw new CustomError("Staff not found", 404, "NotFoundError")
+        }
+        return "Staff successfully deleted" 
     }
 }
 

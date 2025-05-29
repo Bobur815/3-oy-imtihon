@@ -48,7 +48,10 @@ class BranchService{
     }
 
     async deleteBranch(branch_id){
-        await BranchesModel.findByIdAndDelete(branch_id)
+        const result = await BranchesModel.findByIdAndDelete(branch_id)
+        if(!result){
+            throw new CustomError("Branch not found", 404, "NotFoundError")
+        }
         return "Branch successfully deleted"
     }
 
