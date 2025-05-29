@@ -4,7 +4,8 @@ import jwt from "../utils/jwt.js";
 
 export default async (req,res,next) => {
     try {
-        const token = req.headers.token || req.headers.authorization
+        const token =  req.headers.authorization || req.headers.token
+        console.log(token);
         if (!token) {
             throw new CustomError("Token is required!",404, "NotFoundError");
         }
