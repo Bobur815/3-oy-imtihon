@@ -1,5 +1,4 @@
 import branchService from "../service/Branch.service.js"
-import CustomError from "../utils/CustomError.js"
 import { Validators } from "../utils/Joi.validation.js"
 
 class BranchController{

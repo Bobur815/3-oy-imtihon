@@ -21,5 +21,5 @@ routes.forEach(({ url, funk }) => {
 app.use(ErrorHandler)
 
 await connectDB();
-app.listen(PORT, () => console.log("Server is running..."))
+app.listen(PORT, () => console.log(`Server is running on ${PORT} PORT...`))
 
