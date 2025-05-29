@@ -16,7 +16,7 @@ const staffSchema = new Schema({
         }
     },
     password: {type: String, required: true },
-    birthdate: {type: String, required: true},
+    birthDate: {type: String, required: true},
     gender: {type: String, enum:["Male","Female"], required:true},
     role: {type: String, enum:["staff","admin","SuperAdmin"], default:"staff"}
 }, {timestamps:true})

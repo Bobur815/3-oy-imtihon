@@ -71,7 +71,7 @@ class StaffController{
                 throw error
             }
 
-            const result = await userService.createUser(req.body);
+            const result = await staffService.loginStaff(req.body);
 
             res.status(201).json({
                 success: true,
@@ -86,7 +86,7 @@ class StaffController{
 
     async updateStaff(req,res,next){
         try {
-            const result = await staffService.updateStaff(req.body)
+            const result = await staffService.updateStaff(req.body,req.params.staff_id)
             res.status(202).json({
                 success: true,
                 message: "Staff updated successfully",

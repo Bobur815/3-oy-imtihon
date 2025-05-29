@@ -2,3 +2,447 @@
 Stack: ValidationError: "firstname" is required
 26-05-2025 | 18:26:35 | [ERROR] : [POST /api/staff/register] ValidationError: "branch_id" is required
 Stack: ValidationError: "branch_id" is required
+27-05-2025 | 09:49:03 | [ERROR] : [POST /api/staff/register] ValidationError: "confirmPassword" is required
+Stack: ValidationError: "confirmPassword" is required
+27-05-2025 | 09:58:11 | [ERROR] : [POST /api/staff/register] ValidationError: "birthDate" is required
+Stack: ValidationError: "birthDate" is required
+27-05-2025 | 09:58:37 | [ERROR] : [POST /api/staff/register] ValidationError: Staff validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password"
+Stack: ValidationError: Staff validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password"
+    at Document.invalidate (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\document.js:3343:32)
+27-05-2025 | 09:59:24 | [ERROR] : [POST /api/staff/register] ValidationError: Staff validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password"
+Stack: ValidationError: Staff validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password"
+    at Document.invalidate (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\document.js:3343:32)
+27-05-2025 | 09:59:56 | [ERROR] : [POST /api/staff/register] TypeError: this.generateToken is not a function
+Stack: TypeError: this.generateToken is not a function
+    at StaffService.createStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:42:30)
+27-05-2025 | 10:00:43 | [ERROR] : [POST /api/staff/register] UsernameExists: Staff with this username exists
+Stack: UsernameExists: Staff with this username exists
+    at StaffService.createStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:34:19)
+27-05-2025 | 10:01:29 | [ERROR] : [POST /api/staff/register] Error: invalid expiresIn option for string payload
+Stack: Error: invalid expiresIn option for string payload
+    at module.exports [as sign] (C:\Users\user\Desktop\3-oy_imtihon\node_modules\jsonwebtoken\sign.js:158:22)
+27-05-2025 | 10:03:24 | [ERROR] : [POST /api/staff/register] UsernameExists: Staff with this username exists
+Stack: UsernameExists: Staff with this username exists
+    at StaffService.createStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:34:19)
+27-05-2025 | 10:05:22 | [ERROR] : [POST /api/staff/login] ReferenceError: userService is not defined
+Stack: ReferenceError: userService is not defined
+    at loginStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/controller/Staff.controller.js:74:28)
+27-05-2025 | 10:05:59 | [ERROR] : [POST /api/staff/login] TypeError: staffService.createUser is not a function
+Stack: TypeError: staffService.createUser is not a function
+    at loginStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/controller/Staff.controller.js:74:47)
+27-05-2025 | 11:26:49 | [ERROR] : [POST /api/address/add] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+27-05-2025 | 11:27:09 | [ERROR] : [POST /api/address/add] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:16:19)
+27-05-2025 | 11:28:55 | [ERROR] : [POST /api/address/add] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:16:19)
+27-05-2025 | 12:00:23 | [ERROR] : [POST /api/branch/create] ValidationError: "address_id" is required
+Stack: ValidationError: "address_id" is required
+27-05-2025 | 12:05:51 | [ERROR] : [POST /api/staff/register] ValidationError: "birthDate" is required
+Stack: ValidationError: "birthDate" is required
+27-05-2025 | 12:06:00 | [ERROR] : [POST /api/staff/register] ValidationError: "role" is required
+Stack: ValidationError: "role" is required
+27-05-2025 | 12:07:14 | [ERROR] : [POST /api/branch/create] TypeError: Cannot read properties of null (reading 'populate')
+Stack: TypeError: Cannot read properties of null (reading 'populate')
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:22:91)
+27-05-2025 | 12:08:04 | [ERROR] : [POST /api/branch/create] ValidationError: Permission denied to write 
+Stack: ValidationError: Permission denied to write 
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:25:19)
+27-05-2025 | 12:13:27 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write 
+Stack: PermissionError: Permission denied to write 
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+27-05-2025 | 12:14:04 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write undefined
+Stack: PermissionError: Permission denied to write undefined
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:30:19)
+27-05-2025 | 12:14:28 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write undefined
+Stack: PermissionError: Permission denied to write undefined
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:30:19)
+27-05-2025 | 12:16:59 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write t
+Stack: PermissionError: Permission denied to write t
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:30:19)
+27-05-2025 | 12:17:24 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write branch
+Stack: PermissionError: Permission denied to write branch
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:30:19)
+27-05-2025 | 12:18:25 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write branch
+Stack: PermissionError: Permission denied to write branch
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+27-05-2025 | 12:21:08 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at StaffService.updateStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:78:19)
+27-05-2025 | 12:26:42 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:16:19)
+27-05-2025 | 12:27:20 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:16:19)
+27-05-2025 | 12:27:43 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:16:19)
+27-05-2025 | 12:29:42 | [ERROR] : [PUT /api/staff/update] CastError: Cast to ObjectId failed for value "Bobur93" (type string) at path "_id" for model "Staff"
+Stack: CastError: Cast to ObjectId failed for value "Bobur93" (type string) at path "_id" for model "Staff"
+    at SchemaObjectId.cast (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\schema\objectId.js:251:11)
+27-05-2025 | 12:30:50 | [ERROR] : [PUT /api/staff/update] CastError: Cast to ObjectId failed for value "Bobur93" (type string) at path "_id" for model "Staff"
+Stack: CastError: Cast to ObjectId failed for value "Bobur93" (type string) at path "_id" for model "Staff"
+    at SchemaObjectId.cast (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\schema\objectId.js:251:11)
+27-05-2025 | 12:31:55 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at StaffService.updateStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:78:19)
+27-05-2025 | 16:42:29 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at StaffService.updateStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:78:19)
+27-05-2025 | 17:00:47 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at StaffService.updateStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:78:19)
+27-05-2025 | 17:01:10 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at StaffService.updateStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:78:19)
+27-05-2025 | 17:07:45 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at StaffService.updateStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:78:19)
+27-05-2025 | 17:08:36 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at StaffService.updateStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:78:19)
+27-05-2025 | 17:17:40 | [ERROR] : [POST /api/staff/login] ReferenceError: oldUser is not defined
+Stack: ReferenceError: oldUser is not defined
+    at StaffService.loginStaff (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Staff.service.js:61:54)
+27-05-2025 | 17:18:34 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update staff
+Stack: PermissionError: Permission denied to update staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+27-05-2025 | 18:16:03 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update staff
+Stack: PermissionError: Permission denied to update staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:30:19)
+27-05-2025 | 18:17:10 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update staff
+Stack: PermissionError: Permission denied to update staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:30:19)
+27-05-2025 | 18:19:27 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:38:19)
+27-05-2025 | 18:20:07 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:38:19)
+27-05-2025 | 18:21:54 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:38:19)
+27-05-2025 | 18:22:21 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:40:19)
+27-05-2025 | 18:23:04 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:40:19)
+27-05-2025 | 18:23:30 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:40:19)
+27-05-2025 | 18:23:54 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:40:19)
+27-05-2025 | 18:24:26 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:40:19)
+27-05-2025 | 18:24:52 | [ERROR] : [PUT /api/staff/update] ReferenceError: _id is not defined
+Stack: ReferenceError: _id is not defined
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:37:30)
+27-05-2025 | 18:25:09 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update other staff
+Stack: PermissionError: Permission denied to update other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:40:19)
+27-05-2025 | 18:26:44 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update branch_id or role
+Stack: PermissionError: Permission denied to update branch_id or role
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:42:19)
+27-05-2025 | 18:29:41 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update branch_id or role
+Stack: PermissionError: Permission denied to update branch_id or role
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:42:19)
+27-05-2025 | 18:31:56 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:16:19)
+27-05-2025 | 18:32:10 | [ERROR] : [PUT /api/staff/update] NotFoundError: Staff not found
+Stack: NotFoundError: Staff not found
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:16:19)
+27-05-2025 | 18:32:48 | [ERROR] : [PUT /api/staff/update] PermissionError: Permission denied to update branch_id or role
+Stack: PermissionError: Permission denied to update branch_id or role
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:42:19)
+27-05-2025 | 18:34:28 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write branch
+Stack: PermissionError: Permission denied to write branch
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:30:19)
+28-05-2025 | 10:55:51 | [ERROR] : [GET /api/staff/all] TypeError: Cannot read properties of undefined (reading '_id')
+Stack: TypeError: Cannot read properties of undefined (reading '_id')
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:36:49)
+28-05-2025 | 11:07:48 | [ERROR] : [GET /api/staff/all] TypeError: Cannot read properties of undefined (reading '_id')
+Stack: TypeError: Cannot read properties of undefined (reading '_id')
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:36:49)
+28-05-2025 | 11:08:46 | [ERROR] : [GET /api/staff/all] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:37:19)
+28-05-2025 | 11:11:05 | [ERROR] : [GET /api/staff/single/6835bb9ea533065fa9fb6ea0] PermissionError: Permission denied to read single
+Stack: PermissionError: Permission denied to read single
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:29:19)
+28-05-2025 | 11:11:50 | [ERROR] : [GET /api/staff/single/6835bb9ea533065fa9fb6ea0] PermissionError: Permission denied to read single
+Stack: PermissionError: Permission denied to read single
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:29:19)
+28-05-2025 | 11:13:12 | [ERROR] : [GET /api/staff/single/6835bb9ea533065fa9fb6ea0] PermissionError: Permission denied to read single
+Stack: PermissionError: Permission denied to read single
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:29:19)
+28-05-2025 | 11:14:10 | [ERROR] : [GET /api/staff/single/6835bafea533065fa9fb6e96] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:36:19)
+28-05-2025 | 11:16:09 | [ERROR] : [GET /api/staff/single/6835bafea533065fa9fb6e96] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:38:19)
+28-05-2025 | 11:25:58 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:37:19)
+28-05-2025 | 11:27:56 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:37:19)
+28-05-2025 | 11:33:04 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:37:19)
+28-05-2025 | 11:33:35 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:37:19)
+28-05-2025 | 11:34:05 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:37:19)
+28-05-2025 | 11:37:11 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:39:19)
+28-05-2025 | 11:37:16 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:39:19)
+28-05-2025 | 11:37:35 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:39:19)
+28-05-2025 | 11:38:04 | [ERROR] : [GET /api/staff/query?username=Vali] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:39:19)
+28-05-2025 | 11:38:28 | [ERROR] : [GET /api/staff/query?age=Osiyoxon] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:39:19)
+28-05-2025 | 11:39:48 | [ERROR] : [GET /api/staff/query?_id=6835bb9ea533065fa9fb6ea0] TypeError: Cannot read properties of undefined (reading 'toString')
+Stack: TypeError: Cannot read properties of undefined (reading 'toString')
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:38:38)
+28-05-2025 | 11:42:32 | [ERROR] : [GET /api/staff/query?age=6835bb9ea533065fa9fb6ea0] PermissionError: Permission denied to read other staff
+Stack: PermissionError: Permission denied to read other staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:40:19)
+28-05-2025 | 11:43:35 | [ERROR] : [GET /api/staff/query?age=6835bb9ea533065fa9fb6ea0] PermissionError: Staff can only search by id or username
+Stack: PermissionError: Staff can only search by id or username
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:39:19)
+28-05-2025 | 11:46:35 | [ERROR] : [PUT /api/staff/update/] PermissionError: Permission denied to update branch_id or role
+Stack: PermissionError: Permission denied to update branch_id or role
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:41:19)
+28-05-2025 | 11:47:22 | [ERROR] : [DELETE /api/staff/delete/6835646f0ec29015318b3663] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 11:47:35 | [ERROR] : [DELETE /api/staff/delete/6835646f0ec29015318b3663] PermissionError: Permission denied to delete staff
+Stack: PermissionError: Permission denied to delete staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+28-05-2025 | 12:09:23 | [ERROR] : [GET /api/transports/all] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 12:10:30 | [ERROR] : [GET /api/transports/single/sdasds] CastError: Cast to ObjectId failed for value "sdasds" (type string) at path "_id" for model "Transport"
+Stack: CastError: Cast to ObjectId failed for value "sdasds" (type string) at path "_id" for model "Transport"
+    at SchemaObjectId.cast (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\schema\objectId.js:251:11)
+28-05-2025 | 13:39:47 | [ERROR] : [POST /api/branch/create] PermissionError: Permission denied to write branch
+Stack: PermissionError: Permission denied to write branch
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+28-05-2025 | 13:41:44 | [ERROR] : [POST /api/transports/create] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 13:41:52 | [ERROR] : [POST /api/transports/create] ValidationError: Transport validation failed: branch_id: Cast to ObjectId failed for value "2eeee2" (type string) at path "branch_id" because of "BSONError"
+Stack: ValidationError: Transport validation failed: branch_id: Cast to ObjectId failed for value "2eeee2" (type string) at path "branch_id" because of "BSONError"
+    at Document.invalidate (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\document.js:3343:32)
+28-05-2025 | 13:42:36 | [ERROR] : [GET /api/branch/all] NotFoundError: Token is required!
+Stack: NotFoundError: Token is required!
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:9:19)
+28-05-2025 | 13:52:20 | [ERROR] : [GET /api/transports/query?modelName=BMW] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 13:54:20 | [ERROR] : [PUT /api/transports/update] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 13:54:39 | [ERROR] : [PUT /api/transports/update] NotFoundError: transport not found
+Stack: NotFoundError: transport not found
+    at TransportService.updateTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:51:19)
+28-05-2025 | 13:55:47 | [ERROR] : [PUT /api/transports/update] ValidationError: "_id" is not allowed
+Stack: ValidationError: "_id" is not allowed
+28-05-2025 | 13:56:00 | [ERROR] : [PUT /api/transports/update] ValidationError: "id" is not allowed
+Stack: ValidationError: "id" is not allowed
+28-05-2025 | 13:57:28 | [ERROR] : [PUT /api/transports/update] NotFoundError: transport not found
+Stack: NotFoundError: transport not found
+    at TransportService.updateTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:51:19)
+28-05-2025 | 13:57:43 | [ERROR] : [PUT /api/transports/update] ValidationError: "_id" is not allowed
+Stack: ValidationError: "_id" is not allowed
+28-05-2025 | 15:31:27 | [ERROR] : [DELETE /api/transports/delete/6836d02e9e6d159f3ccc3664] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 15:39:41 | [ERROR] : [PUT /api/transports/update] TypeError: Cannot read properties of null (reading 'img')
+Stack: TypeError: Cannot read properties of null (reading 'img')
+    at update (file:///C:/Users/user/Desktop/3-oy_imtihon/src/controller/Transport.controller.js:74:96)
+28-05-2025 | 15:41:42 | [ERROR] : [POST /api/transports/create] modelNameExists: transport with this modelName exists
+Stack: modelNameExists: transport with this modelName exists
+    at TransportService.createTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:36:19)
+28-05-2025 | 15:42:56 | [ERROR] : [POST /api/transports/create] modelNameExists: transport with this modelName exists
+Stack: modelNameExists: transport with this modelName exists
+    at TransportService.createTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:36:19)
+28-05-2025 | 16:32:44 | [ERROR] : [POST /api/transports/create] modelNameExists: transport with this modelName exists
+Stack: modelNameExists: transport with this modelName exists
+    at TransportService.createTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:36:19)
+28-05-2025 | 16:42:53 | [ERROR] : [PUT /api/transports/update] TypeError: Cannot read properties of undefined (reading 'cwd')
+Stack: TypeError: Cannot read properties of undefined (reading 'cwd')
+    at TransportService.updateTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:65:42)
+28-05-2025 | 16:43:39 | [ERROR] : [PUT /api/transports/update] TypeError: Cannot read properties of undefined (reading 'cwd')
+Stack: TypeError: Cannot read properties of undefined (reading 'cwd')
+    at TransportService.updateTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:65:42)
+28-05-2025 | 17:03:29 | [ERROR] : [PUT /api/transports/update] TypeError: Cannot read properties of undefined (reading 'cwd')
+Stack: TypeError: Cannot read properties of undefined (reading 'cwd')
+    at TransportService.updateTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:65:42)
+28-05-2025 | 17:03:59 | [ERROR] : [PUT /api/transports/update] TypeError: path.join(...) is not a function
+Stack: TypeError: path.join(...) is not a function
+    at TransportService.updateTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:65:34)
+28-05-2025 | 17:04:16 | [ERROR] : [PUT /api/transports/update] TypeError: The "path" argument must be of type string. Received null
+Stack: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received null
+    at Object.join (node:path:478:7)
+28-05-2025 | 17:06:31 | [ERROR] : [PUT /api/transports/update] TypeError: The "path" argument must be of type string. Received null
+Stack: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received null
+    at Object.join (node:path:478:7)
+28-05-2025 | 17:40:14 | [ERROR] : [GET /api/branch/byname?address_id=6835627a226dcfeddf4e576f] TypeError: Name is required
+Stack: TypeError: Name is required
+    at getByName (file:///C:/Users/user/Desktop/3-oy_imtihon/src/controller/Branch.controller.js:26:23)
+28-05-2025 | 17:48:03 | [ERROR] : [PUT /api/branch/update] NotFoundError: Token is required!
+Stack: NotFoundError: Token is required!
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:9:19)
+28-05-2025 | 17:48:17 | [ERROR] : [PUT /api/branch/update] ValidationError: "address_id" is required
+Stack: ValidationError: "address_id" is required
+28-05-2025 | 17:49:55 | [ERROR] : [PUT /api/branch/update] ValidationError: "_id" is not allowed
+Stack: ValidationError: "_id" is not allowed
+28-05-2025 | 17:50:39 | [ERROR] : [PUT /api/branch/update] NotFoundError: Branch not found
+Stack: NotFoundError: Branch not found
+    at BranchService.updateBranch (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Branch.service.js:43:19)
+28-05-2025 | 18:08:58 | [ERROR] : [GET /api/address/all] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 18:10:17 | [ERROR] : [PUT /api/address/update] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 18:10:29 | [ERROR] : [PUT /api/address/update] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 18:10:31 | [ERROR] : [PUT /api/address/update] TokenExpiredError: jwt expired
+Stack: TokenExpiredError: jwt expired
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:23:25)
+28-05-2025 | 18:10:45 | [ERROR] : [PUT /api/address/update] ValidationError: "id" is not allowed
+Stack: ValidationError: "id" is not allowed
+28-05-2025 | 18:11:33 | [ERROR] : [PUT /api/address/update] TypeError: Cannot read properties of undefined (reading 'img')
+Stack: TypeError: Cannot read properties of undefined (reading 'img')
+    at update (file:///C:/Users/user/Desktop/3-oy_imtihon/src/controller/Address.controller.js:44:91)
+28-05-2025 | 18:23:16 | [ERROR] : [GET /api/branch/byid/68356314226dcfeddf4e57] CastError: Cast to ObjectId failed for value "68356314226dcfeddf4e57" (type string) at path "_id" for model "Branch"
+Stack: CastError: Cast to ObjectId failed for value "68356314226dcfeddf4e57" (type string) at path "_id" for model "Branch"
+    at SchemaObjectId.cast (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\schema\objectId.js:251:11)
+28-05-2025 | 18:30:57 | [ERROR] : [GET /api/permission/single/6835b75a5bd02d4f93f73b52] NotFoundError: Token is required!
+Stack: NotFoundError: Token is required!
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/checktoken.js:9:19)
+28-05-2025 | 18:31:09 | [ERROR] : [GET /api/permission/single/6835b75a5bd02d4f93f73b52] ObjectParameterError: Parameter "filter" to findOne() must be an object, got "6835b75a5bd02d4f93f73b52" (type string)
+Stack: ObjectParameterError: Parameter "filter" to findOne() must be an object, got "6835b75a5bd02d4f93f73b52" (type string)
+    at Query.findOne (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongoose\lib\query.js:2751:16)
+28-05-2025 | 18:39:40 | [ERROR] : [GET /api/permission/query?staff_id=6835b75a5bd02d4f93f73b52] TypeError: Cannot read properties of undefined (reading 'permissionModel')
+Stack: TypeError: Cannot read properties of undefined (reading 'permissionModel')
+    at PermissionService.getByQuery (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:22:21)
+28-05-2025 | 18:41:29 | [ERROR] : [GET /api/permission/query?staff_id=6835b75a5bd02d4f93f73b52] TypeError: Cannot read properties of undefined (reading 'permissionModel')
+Stack: TypeError: Cannot read properties of undefined (reading 'permissionModel')
+    at PermissionService.getByQuery (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:22:21)
+28-05-2025 | 18:41:55 | [ERROR] : [GET /api/permission/query?staff_id=6835b75a5bd02d4f93f73b52] TypeError: Cannot read properties of undefined (reading 'permissionModel')
+Stack: TypeError: Cannot read properties of undefined (reading 'permissionModel')
+    at PermissionService.getByQuery (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:22:21)
+28-05-2025 | 18:42:36 | [ERROR] : [GET /api/permission/query?staff_id=6835b75a5bd02d4f93f73b52] TypeError: Cannot read properties of undefined (reading 'permissionModel')
+Stack: TypeError: Cannot read properties of undefined (reading 'permissionModel')
+    at PermissionService.getByQuery (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:22:21)
+28-05-2025 | 18:42:59 | [ERROR] : [GET /api/permission/query?staff_id=6835b75a5bd02d4f93f73b52] TypeError: Cannot read properties of undefined (reading 'permissionModel')
+Stack: TypeError: Cannot read properties of undefined (reading 'permissionModel')
+    at PermissionService.getByQuery (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:22:21)
+28-05-2025 | 18:43:38 | [ERROR] : [GET /api/permission/query?staff_id=6835b75a5bd02d4f93f73b52] TypeError: Cannot read properties of undefined (reading 'permissionModel')
+Stack: TypeError: Cannot read properties of undefined (reading 'permissionModel')
+    at PermissionService.getByQuery (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:22:21)
+29-05-2025 | 08:43:33 | [ERROR] : [GET /api/permission/query?staff_id=6835bb9ea533065fa9fb6ea8] NotFoundError: Permission not found
+Stack: NotFoundError: Permission not found
+    at PermissionService.getByQuery (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:29:19)
+29-05-2025 | 09:05:42 | [ERROR] : [DELETE /api/permission/delete/6835bb9ea533065fa9fb6ea8] NotFoundError: Permission not found
+Stack: NotFoundError: Permission not found
+    at PermissionService.deletePermission (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:51:19)
+29-05-2025 | 09:05:50 | [ERROR] : [DELETE /api/permission/delete/6835bb9ea533065fa9fb6ea0] NotFoundError: Permission not found
+Stack: NotFoundError: Permission not found
+    at PermissionService.deletePermission (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:51:19)
+29-05-2025 | 09:52:40 | [ERROR] : [POST /api/permission/create] ValidationError: "permissionModel" must be one of [staff, admin, SuperAdmin]
+Stack: ValidationError: "permissionModel" must be one of [staff, admin, SuperAdmin]
+29-05-2025 | 10:05:28 | [ERROR] : [GET /api/permission/single/6835bb9ea533065fa9fb6ea0] NotFoundError: Permission not found
+Stack: NotFoundError: Permission not found
+    at PermissionService.getById (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:15:19)
+29-05-2025 | 10:05:53 | [ERROR] : [POST /api/permission/create] SyntaxError: Expected double-quoted property name in JSON at position 122 (line 7 column 1)
+Stack: SyntaxError: Expected double-quoted property name in JSON at position 122 (line 7 column 1)
+    at JSON.parse (<anonymous>)
+29-05-2025 | 10:06:16 | [ERROR] : [GET /api/permission/single/6835bb9ea533065fa9fb6ea0] NotFoundError: Permission not found
+Stack: NotFoundError: Permission not found
+    at PermissionService.getById (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Permission.service.js:15:19)
+29-05-2025 | 10:07:32 | [ERROR] : [GET /api/transports/all] PermissionError: Permission denied to read transports
+Stack: PermissionError: Permission denied to read transports
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 10:09:14 | [ERROR] : [GET /api/transport/all] TypeError: Cannot read properties of undefined (reading '_id')
+Stack: TypeError: Cannot read properties of undefined (reading '_id')
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:36:49)
+29-05-2025 | 10:10:02 | [ERROR] : [GET /api/transport/all] TypeError: Cannot read properties of undefined (reading '_id')
+Stack: TypeError: Cannot read properties of undefined (reading '_id')
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:36:49)
+29-05-2025 | 10:11:56 | [ERROR] : [GET /api/transport/all] PermissionError: Staff can only search by id or username
+Stack: PermissionError: Staff can only search by id or username
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:40:19)
+29-05-2025 | 10:15:16 | [ERROR] : [GET /api/transport/single/6836ccf837041a89e59362f7] PermissionError: Staff can only search by id or username
+Stack: PermissionError: Staff can only search by id or username
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Read.permission.js:44:19)
+29-05-2025 | 10:33:11 | [ERROR] : [POST /api/transport/create] modelNameExists: transport with this modelName exists
+Stack: modelNameExists: transport with this modelName exists
+    at TransportService.createTransport (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Transport.service.js:44:19)
+29-05-2025 | 10:36:31 | [ERROR] : [POST /api/transport/create] MongoServerError: E11000 duplicate key error collection: 3-oy_imtihon.transports index: modelName_1 dup key: { modelName: "Lada " }
+Stack: MongoServerError: E11000 duplicate key error collection: 3-oy_imtihon.transports index: modelName_1 dup key: { modelName: "Lada " }
+    at InsertOneOperation.execute (C:\Users\user\Desktop\3-oy_imtihon\node_modules\mongodb\lib\operations\insert.js:51:19)
+29-05-2025 | 10:43:42 | [ERROR] : [DELETE /api/transport/delete/6836cd1f37041a89e59362fb] PermissionError: Permission denied to delete transport
+Stack: PermissionError: Permission denied to delete transport
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 10:44:36 | [ERROR] : [PUT /api/transport/update/6836cd1f37041a89e59362fb] TypeError: The "path" argument must be of type string. Received null
+Stack: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received null
+    at Object.join (node:path:478:7)
+29-05-2025 | 10:44:53 | [ERROR] : [PUT /api/transport/update/6836cd1f37041a89e59362fb] TypeError: The "path" argument must be of type string. Received null
+Stack: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received null
+    at Object.join (node:path:478:7)
+29-05-2025 | 10:48:50 | [ERROR] : [PUT /api/transport/update/6836cd1f37041a89e59362fb] TypeError: The "path" argument must be of type string. Received null
+Stack: TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received null
+    at Object.join (node:path:478:7)
+29-05-2025 | 11:04:42 | [ERROR] : [GET /api/staff/all] PermissionError: Permission denied to read staff
+Stack: PermissionError: Permission denied to read staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 11:05:07 | [ERROR] : [GET /api/staff/query?username=Osiyoxon] PermissionError: Permission denied to read staff
+Stack: PermissionError: Permission denied to read staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 11:05:43 | [ERROR] : [GET /api/staff/query?username=Osiyoxon] PermissionError: Permission denied to read staff
+Stack: PermissionError: Permission denied to read staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 11:06:47 | [ERROR] : [GET /api/staff/all] PermissionError: Permission denied to read staff
+Stack: PermissionError: Permission denied to read staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 11:07:14 | [ERROR] : [GET /api/staff/all] PermissionError: Permission denied to read staff
+Stack: PermissionError: Permission denied to read staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 11:08:14 | [ERROR] : [GET /api/staff/all] PermissionError: Permission denied to read staff
+Stack: PermissionError: Permission denied to read staff
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 11:09:47 | [ERROR] : [POST /api/permission/create] PermissionError: Permission denied to write permission
+Stack: PermissionError: Permission denied to write permission
+    at default (file:///C:/Users/user/Desktop/3-oy_imtihon/src/middleware/Permission.js:29:19)
+29-05-2025 | 11:12:13 | [ERROR] : [PUT /api/branch/update/68356314226dcfeddf4e5786] NotFoundError: Branch not found
+Stack: NotFoundError: Branch not found
+    at BranchService.updateBranch (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Branch.service.js:43:19)
+29-05-2025 | 11:12:49 | [ERROR] : [PUT /api/address/update/68355d124f8412c45380f3c4] ReferenceError: CustomError is not defined
+Stack: ReferenceError: CustomError is not defined
+    at AddressService.updateAddress (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Address.service.js:19:13)
+29-05-2025 | 11:13:25 | [ERROR] : [PUT /api/address/update/68355d124f8412c45380f3c4] NotFoundError: address not found
+Stack: NotFoundError: address not found
+    at AddressService.updateAddress (file:///C:/Users/user/Desktop/3-oy_imtihon/src/service/Address.service.js:20:19)
