@@ -5,12 +5,12 @@ class PermissionService{
     constructor(){}
 
     async getAllPermission(){
-        const permissions = await PermissionsModel.find()
+        const permissions = await PermissionsModel.find().populate("staff_id", "username")
         return permissions
     }
 
     async getById(permission_id){
-        const permission = await PermissionsModel.findOne({_id:permission_id})
+        const permission = await PermissionsModel.findOne({_id:permission_id}).populate("staff_id", "username")
         if(!permission){
             throw new CustomError("Permission not found", 404, "NotFoundError")
         }
@@ -19,6 +19,7 @@ class PermissionService{
     }
 
     async getByQuery(query){
+        // Query argumentlarini obyektga olish
         let queryNames = ["permissionModel","staff_id"]
         let getQuery = {}
 
@@ -28,7 +29,7 @@ class PermissionService{
             }
         }
 
-        const permission = await PermissionsModel.findOne(getQuery)
+        const permission = await PermissionsModel.findOne(getQuery).populate("staff_id", "username")
         if(!permission){
             throw new CustomError("Permission not found", 404, "NotFoundError")
         }
@@ -39,7 +40,7 @@ class PermissionService{
     async addPermission(data){
         const oldPermission = await PermissionsModel.findOne({staff_id:data.staff_id,permissionModel:data.permissionModel})
         if(oldPermission){
-            throw new CustomError("Permission name exists",400, "PermissionExistsError")
+            throw new CustomError("Permission exists",400, "PermissionExistsError")
         }
         await PermissionsModel.create(data)
         return "Permission successfully added"

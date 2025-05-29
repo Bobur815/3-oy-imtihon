@@ -4,7 +4,7 @@ import jwt from "../utils/jwt.js";
 
 export default async (req,res,next) => {
     try {
-
+        console.log(req.headers.authorization);
         const token =  req.headers.authorization.split(" ")[1] || req.headers.token
 
         if (!token) {

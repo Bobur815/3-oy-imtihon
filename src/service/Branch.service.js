@@ -10,6 +10,7 @@ class BranchService{
     }
 
     async getByName(query){
+        // Query argumentlarini olish
         let queryNames = ["name","address_id","_id"]
         let getQuery = {}
 
