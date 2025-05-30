@@ -32,7 +32,7 @@ class PermissionController{
     async getByQueryParam(req,res,next){
         try {
 
-            //
+            // Query so'rovi mavjudligini tekshirish
             if (!Object.keys(req.query).length) {
                 throw new CustomError("At least one query is required", 400, "TypeError")
             }

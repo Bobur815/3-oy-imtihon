@@ -26,7 +26,7 @@ class TransportController{
                 throw new CustomError("At least one query is required", 400, "TypeError")
             }
 
-            const transport = await transportService.getTransportByQuery(req.query)
+            const transport = await transportService.getTransportByQuery(req.query,req.user)
             res.status(200).json({
                 success:true,
                 message:"success",
@@ -39,7 +39,7 @@ class TransportController{
 
     async getById(req,res,next){
         try {
-            const transport = await transportService.getTransportById(req.params.transport_id)
+            const transport = await transportService.getTransportById(req.params.transport_id,req.user)
             res.status(200).json({
                 success:true,
                 message:"success",

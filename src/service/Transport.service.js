@@ -10,24 +10,38 @@ class TransportService {
     async getAllTransports(user){
         let transportData;
 
-        // staff bo'lsa faqat o'zining branchidagi transportlar ko'rsatiladi
+        // Superadmin barchasini ko'ra oladi
         if(user.role === "SuperAdmin"){
             transportData = await transportsModel.find().populate("branch_id","name")
-        } else{
+        } 
+        
+        // staff yoki admin bo'lsa faqat o'zining branchidagi transportlar ko'rsatiladi
+        else{
             transportData = await transportsModel.find({branch_id:user.branch_id})
         }
         return transportData
     }
 
-    async getTransportById(transport_id){
-        const transport = await transportsModel.findById(transport_id).populate("branch_id","name")
-        if(!transport){
+    async getTransportById(transport_id,user){
+        let transportData;
+
+        // Superadmin barchasini ko'ra oladi
+        if(user.role === "SuperAdmin"){
+            transportData = await transportsModel.findById(transport_id).populate("branch_id","name")
+        } 
+
+        // staff yoki admin bo'lsa faqat o'zining branchidagi transportlar ko'rsatiladi
+        else{
+            transportData = await transportsModel.find({_id:transport_id,branch_id:user.branch_id})
+        }   
+
+        if(!transportData){
             throw new CustomError("Transport not found", 404, "NotFoundError")
         }
-        return transport
+        return transportData
     }
 
-    async getTransportByQuery(query){
+    async getTransportByQuery(query,user){
         let queryNames = ["_id","modelName","color","price","branch_id"]
         let getQuery = {}
 
@@ -37,12 +51,23 @@ class TransportService {
             }
         }
 
-        const transport = await transportsModel.find(getQuery).populate("branch_id","name")
-        if(!transport){
+        let transportData;
+
+        // Superadmin barchasini ko'ra oladi
+        if(user.role === "SuperAdmin"){
+            transportData = await transportsModel.find(getQuery).populate("branch_id","name")
+        } 
+        
+        // staff yoki admin bo'lsa faqat o'zining branchidagi transportlar ko'rsatiladi
+        else{
+            getQuery[branch_id] = user.branch_id
+            transportData = await transportsModel.find(getQuery)
+        }   
+
+        if(!transportData){
             throw new CustomError("Transport not found", 404, "NotFoundError")
         }
-        
-        return transport
+        return transportData
     }
 
     async createTransport(data,img){

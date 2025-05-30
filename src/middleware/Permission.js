@@ -1,4 +1,5 @@
 import PermissionsModel from "../models/Permissions.model.js"
+import StaffsModel from "../models/Staffs.model.js"
 import CustomError from "../utils/CustomError.js"
 
 export default  async (req,res,next) => {
@@ -21,16 +22,25 @@ export default  async (req,res,next) => {
             throw new CustomError(`Unsupported method ${req.method}`, 400, "BadRequestError");
         }
 
-        const permissionName = req.originalUrl.split('/')[2]
+        const permissionModel = req.originalUrl.split('/')[2]
         console.log(req.user._id);
 
-        const permissionStaff = await PermissionsModel.findOne({staff_id:req.user._id, permissionModel: permissionName})
+        const permissionStaff = await PermissionsModel.findOne({staff_id:req.user._id, permissionModel})
         if(!permissionStaff || !permissionStaff[method]){
-            throw new CustomError(`Permission denied to ${method} ${permissionName}`, 403, "PermissionError")
+            throw new CustomError(`Permission denied to ${method} ${permissionModel}`, 403, "PermissionError")
         }
 
         // Roli Admin bo'lsa yoki permissionModel staff bo'lmasa ruxsat berilsin 
-        if(userRole === "admin" || permissionName != "staff"){
+        if(userRole === "admin" || permissionModel != "staff"){
+
+            // Admin o'zining branchidagi stafflarnigina o'zgartira olishi mumkin
+            if((req.method === "PUT" || req.method === "DELETE") && permissionModel == "staff"){
+
+                const updatingUser = await StaffsModel.findById(req.params.staff_id)
+                if(req.user.branch_id.toString() !== updatingUser.branch_id.toString()){
+                    throw new CustomError(`Permission denied to ${method} ${permissionModel} in other branch`, 403, "PermissionError")
+                }
+            }
             return next()
         }
 
@@ -38,7 +48,7 @@ export default  async (req,res,next) => {
 
             // permissionModel staff bo'lsa faqat o'zinikini o'zgratirishga ruxsat berish 
             if(req.user._id.toString() !== req.body._id.toString()){
-                throw new CustomError(`Permission denied to ${method} other ${permissionName}`, 403, "PermissionError")
+                throw new CustomError(`Permission denied to ${method} other ${permissionModel}`, 403, "PermissionError")
             }
 
             // staff o'zini branch_idsini va rolini o'zgartirolmaydi
@@ -63,12 +73,11 @@ export default  async (req,res,next) => {
             
             // Staff boshqa staffni ma'lumotlarini ko'rolmaydi
             if(!staffValue || reqUserKey.toString() !== staffValue.toString()){
-                throw new CustomError(`Permission denied to ${method} other ${permissionName}`, 403, "PermissionError")
+                throw new CustomError(`Permission denied to ${method} other ${permissionModel}`, 403, "PermissionError")
             }
         }
 
-        next()
-
+        return next()
     } catch (error) {
         next(error)
     }

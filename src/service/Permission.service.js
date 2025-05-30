@@ -1,4 +1,5 @@
 import PermissionsModel from "../models/Permissions.model.js";
+import StaffsModel from "../models/Staffs.model.js";
 import CustomError from "../utils/CustomError.js";
 
 class PermissionService{
@@ -38,6 +39,13 @@ class PermissionService{
     }
 
     async addPermission(data){
+        const {role: staffRole} = await StaffsModel.findById(data.staff_id) 
+        
+        // Staffga tegishli permission bo'lmasa va role admin bo'lmasa ruxsat berilmaydi
+        if(staffRole !== 'admin' && data.permissionModel !== "staff"){
+            throw new CustomError("Staff should be admin",400,"PermissionError")
+        }
+
         const oldPermission = await PermissionsModel.findOne({staff_id:data.staff_id,permissionModel:data.permissionModel})
         if(oldPermission){
             throw new CustomError("Permission exists",400, "PermissionExistsError")
@@ -48,6 +56,7 @@ class PermissionService{
 
     async updatePermission(data,permission_id){
         const oldPermission = await PermissionsModel.findById(permission_id)
+
         if(!oldPermission){
             throw new CustomError("Permission not found", 404, "NotFoundError")
         }

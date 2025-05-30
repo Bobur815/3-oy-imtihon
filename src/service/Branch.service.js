@@ -5,7 +5,7 @@ class BranchService{
     constructor(){}
 
     async getAllBranches(){
-        const branches = await BranchesModel.find()
+        const branches = await BranchesModel.find().populate("address_id","name")
         return branches
     }
 
@@ -19,12 +19,12 @@ class BranchService{
                 getQuery[key]=query[key]
             }
         }
-        const branch = await BranchesModel.find(getQuery)
+        const branch = await BranchesModel.find(getQuery).populate("address_id","name")
         return branch
     }
     
     async getById(branch_id){
-        const branch = await BranchesModel.findOne({_id:branch_id})
+        const branch = await BranchesModel.findById(branch_id).populate("address_id","name")
         return branch
     }
 
