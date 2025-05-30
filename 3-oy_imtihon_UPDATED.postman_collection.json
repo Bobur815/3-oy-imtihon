@@ -1,0 +1,1330 @@
+{
+  "info": {
+    "_postman_id": "5fb3f38e-6082-484f-9fb1-07ce5a589e0c",
+    "name": "3-oy_imtihon",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "43494463",
+    "_collection_link": "https://boburmirzoergashev.postman.co/workspace/Boburmirzo-Ergashev's-Workspace~c22094f1-6ccc-4230-892f-b546eacb5a23/collection/43494463-5fb3f38e-6082-484f-9fb1-07ce5a589e0c?action=share&source=collection_link&creator=43494463"
+  },
+  "item": [
+    {
+      "name": "Staff_Requests",
+      "item": [
+        {
+          "name": "Get_All_Staffes",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODIwNjMsImV4cCI6MTc0ODY2ODQ2M30.J-quGle3oZZpPrMff5sRAwVhEbBn1cv4ljPN6tPwsCs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/all",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Staff_By_Query",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MzUwNjAsImV4cCI6MTc0ODYyMTQ2MH0.J3hvCS73Z_vAuySGyffpeXbSxXu1_YZvhfxxJlcpqGA",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/query?username=Osiyoxon",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "query"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "Osiyoxon"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Staff_By_Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MzUwNjAsImV4cCI6MTc0ODYyMTQ2MH0.J3hvCS73Z_vAuySGyffpeXbSxXu1_YZvhfxxJlcpqGA",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/single/6835646f0ec29015318b3663",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "single",
+                "6835646f0ec29015318b3663"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login_Staff",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDgzMjcyMjAsImV4cCI6MTc0ODQxMzYyMH0.EG_BveoZRHcRPGrDZQHLOiX7tKG9jftEiK-ep96OcWo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"O\",\r\n    \"password\":\"123456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/login",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register_Staff",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDgzMjcyMjAsImV4cCI6MTc0ODQxMzYyMH0.EG_BveoZRHcRPGrDZQHLOiX7tKG9jftEiK-ep96OcWo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"Alijon3\",\r\n    \"password\":\"1234567\",\r\n    \"birthDate\":\"15-10-2010\",\r\n    \"gender\":\"Male\",\r\n    \"role\":\"SuperAdmin\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/register",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_Staff",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MzUwNjAsImV4cCI6MTc0ODYyMTQ2MH0.J3hvCS73Z_vAuySGyffpeXbSxXu1_YZvhfxxJlcpqGA",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"role\":\"staff\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/update/6835b23cb0f7af3cac00fb05",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "update",
+                "6835b23cb0f7af3cac00fb05"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_Staff_By_Id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MzUwNjAsImV4cCI6MTc0ODYyMTQ2MH0.J3hvCS73Z_vAuySGyffpeXbSxXu1_YZvhfxxJlcpqGA",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/delete/68393eaf9994ff85d85e7005",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "delete",
+                "68393eaf9994ff85d85e7005"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "SuperAdmin_Requests",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"Bobur93\",\r\n    \"password\":\"987654\",\r\n    \"birthDate\":\"15-08-1993\",\r\n    \"gender\":\"Male\",\r\n    \"role\":\"SuperAdmin\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/register",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "register"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"Bobur93\",\r\n    \"password\":\"987654\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/staff/login",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "staff",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Transports_Requests",
+      "item": [
+        {
+          "name": "Get_All_Transports",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg0OTcxNzEsImV4cCI6MTc0ODU4MzU3MX0.pSHhEHTy8qXTDei4FPNnqRgjtVOZRk5Gjddlhm6Zqb0",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/transport/all",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "transport",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_By_Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MTkyMTcsImV4cCI6MTc0ODYwNTYxN30.20v3-76v1KPWzsU4hh5QhlCFZpmXYwRQybn8mcaiGLY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1YmI5ZWE1MzMwNjVmYTlmYjZlYTAiLCJ1c2VybmFtZSI6Ik9zaXlveG9uIiwiaWF0IjoxNzQ4NDk1MjM3LCJleHAiOjE3NDg1ODE2Mzd9.IZDe393fGkXRNk2rGSXQy-5bWEGj-XXC1ZGj0zxlNfo",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/transport/single/6836ccf837041a89e59362f7",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "transport",
+                "single",
+                "6836ccf837041a89e59362f7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_By_Query",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg0OTcxNzEsImV4cCI6MTc0ODU4MzU3MX0.pSHhEHTy8qXTDei4FPNnqRgjtVOZRk5Gjddlhm6Zqb0",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/transport/query?branch_id=6835637f226dcfeddf4e579a",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "transport",
+                "query"
+              ],
+              "query": [
+                {
+                  "key": "branch_id",
+                  "value": "6835637f226dcfeddf4e579a"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create_Transport",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "modelName",
+                  "value": "Lada cross",
+                  "type": "text"
+                },
+                {
+                  "key": "branch_id",
+                  "value": "6835637f226dcfeddf4e579a",
+                  "type": "text"
+                },
+                {
+                  "key": "color",
+                  "value": "white",
+                  "type": "text"
+                },
+                {
+                  "key": "img",
+                  "type": "file",
+                  "src": "/C:/Users/user/Pictures/Screenshots/Screenshot (36).png"
+                },
+                {
+                  "key": "price",
+                  "value": "12500",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/transport/create",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "transport",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_Transport",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg0OTcxNzEsImV4cCI6MTc0ODU4MzU3MX0.pSHhEHTy8qXTDei4FPNnqRgjtVOZRk5Gjddlhm6Zqb0",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "modelName",
+                  "value": "Lada largus",
+                  "type": "text"
+                },
+                {
+                  "key": "branch_id",
+                  "value": "6835638f226dcfeddf4e579e",
+                  "type": "text"
+                },
+                {
+                  "key": "color",
+                  "value": "black",
+                  "type": "text"
+                },
+                {
+                  "key": "img",
+                  "type": "file",
+                  "src": "/C:/Users/user/Pictures/Screenshots/Screenshot (1).png"
+                },
+                {
+                  "key": "price",
+                  "value": "120000",
+                  "type": "text"
+                },
+                {
+                  "key": "",
+                  "value": "6836e8b67d0ad1b6cfda52fb",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/transport/update/6837f19f2ddad734d077327d",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "transport",
+                "update",
+                "6837f19f2ddad734d077327d"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_Transport",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/transport/delete/6836cd1f37041a89e59362fb",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "transport",
+                "delete",
+                "6836cd1f37041a89e59362fb"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Permissions_Requests",
+      "item": [
+        {
+          "name": "Get_All_Permissions",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MTkyMTcsImV4cCI6MTc0ODYwNTYxN30.20v3-76v1KPWzsU4hh5QhlCFZpmXYwRQybn8mcaiGLY",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MTkyMTcsImV4cCI6MTc0ODYwNTYxN30.20v3-76v1KPWzsU4hh5QhlCFZpmXYwRQybn8mcaiGLY",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/permission/all",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "permission",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Permission_By_Id",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MzUwNjAsImV4cCI6MTc0ODYyMTQ2MH0.J3hvCS73Z_vAuySGyffpeXbSxXu1_YZvhfxxJlcpqGA",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/permission/single/6835bb9ea533065fa9fb6ea0",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "permission",
+                "single",
+                "6835bb9ea533065fa9fb6ea0"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Permission_By_Query",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MzUwNjAsImV4cCI6MTc0ODYyMTQ2MH0.J3hvCS73Z_vAuySGyffpeXbSxXu1_YZvhfxxJlcpqGA",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/permission/query?staff_id=6835bb9ea533065fa9fb6ea0",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "permission",
+                "query"
+              ],
+              "query": [
+                {
+                  "key": "staff_id",
+                  "value": "6835bb9ea533065fa9fb6ea0"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create_Permission",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1MzUwNjAsImV4cCI6MTc0ODYyMTQ2MH0.J3hvCS73Z_vAuySGyffpeXbSxXu1_YZvhfxxJlcpqGA",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"staff_id\":\"6835b23cb0f7af3cac00fb05\",\r\n    \"permissionModel\":\"permission\",\r\n    \"read\":true,\r\n    \"update\":true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/permission/create",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "permission",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_Permission",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"staff_id\":\"6835b75a5bd02d4f93f73b50\",\r\n    \"permissionModel\":\"transport\",\r\n    \"write\":true,\r\n    \"update\":true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/permission/update/6837e864c4370ea02612fa32",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "permission",
+                "update",
+                "6837e864c4370ea02612fa32"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_Permission_By_Id",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/permission/delete/6835bafea533065fa9fb6e98",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "permission",
+                "delete",
+                "6835bafea533065fa9fb6e98"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Branches_Requests",
+      "item": [
+        {
+          "name": "Get_All_Branches",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\":\"Bobur93\",\r\n    \"password\":\"987654\",\r\n    \"birthdate\":\"15-08-1993\",\r\n    \"gender\":\"Male\",\r\n    \"role\":\"SuperAdmin\"\r\n}"
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/branch/all",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "branch",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Branch_By_Id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/branch/byid/6837052f3e17d97df1c88be4",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "branch",
+                "byid",
+                "6837052f3e17d97df1c88be4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Branch_By_Name",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/branch/byname?name=Auto Markaz",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "branch",
+                "byname"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "Auto Markaz"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_Branch_By_Address",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/branch/byname?address_id=6835627a226dcfeddf4e576f",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "branch",
+                "byname"
+              ],
+              "query": [
+                {
+                  "key": "address_id",
+                  "value": "6835627a226dcfeddf4e576f"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create_branch",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Sirdaryo Auto Markaz\",\r\n    \"address_id\": \"68394238e5fbdc8b34a9ebbb\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/branch/create",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "branch",
+                "create"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_branch",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg0MjIzNDksImV4cCI6MTc0ODUwODc0OX0.DSmmHdZSMPtPkHAyFmgvK1UZ-NB94WVEQlTH18WS-fw",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Chevrolet centre\",\r\n    \"address_id\":\"6835627a226dcfeddf4e576f\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/branch/update/68356314226dcfeddf4e5786",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "branch",
+                "update",
+                "68356314226dcfeddf4e5786"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_Branch",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg0MjE2MDQsImV4cCI6MTc0ODUwODAwNH0.45aF1UvHvR6tLHrhUDzWulsFMstv27YN9ixCiv6Ro9I",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/branch/delete/6835637f226dcfeddf4e579a",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "branch",
+                "delete",
+                "6835637f226dcfeddf4e579a"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Address_Requests",
+      "item": [
+        {
+          "name": "Add_address",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"Sirdaryo\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/address/add",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "address",
+                "add"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update_address",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg0MjIzNDksImV4cCI6MTc0ODUwODc0OX0.DSmmHdZSMPtPkHAyFmgvK1UZ-NB94WVEQlTH18WS-fw",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"Toshkent viloyati\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/address/update/6835627a226dcfeddf4e576f",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "address",
+                "update",
+                "6835627a226dcfeddf4e576f"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get_All_address",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM5M2VhZjk5OTRmZjg1ZDg1ZTcwMDUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg1ODI2NTEsImV4cCI6MTc0ODY2OTA1MX0.KscuePrzTaG46IaHpKK5-qdYiSOhF8M0hEi6Jo2lBXo",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/address/all",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "address",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete_address",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODM1NDdhZjIyYTQ0OWMwMjJlMWNjZjUiLCJ1c2VybmFtZSI6IkJvYnVyOTMiLCJpYXQiOjE3NDg0MjIzNDksImV4cCI6MTc0ODUwODc0OX0.DSmmHdZSMPtPkHAyFmgvK1UZ-NB94WVEQlTH18WS-fw",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://three-oy-imtihon-1.onrender.com/api/address/delete/68355d124f8412c45380f3c4",
+              "protocol": "https",
+              "host": [
+                "three-oy-imtihon-1",
+                "onrender",
+                "com"
+              ],
+              "port": null,
+              "path": [
+                "api",
+                "address",
+                "delete",
+                "68355d124f8412c45380f3c4"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
